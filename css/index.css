@@ -47,7 +47,7 @@ a {
 }
 .nav-card a:hover {
     color: white;
-    background-color: #333;
+    background-color: #111;
 }
 
 
@@ -92,8 +92,86 @@ a {
     font-size: 1.2rem;
 }
 
+/* Custom Gradient WIP */
 
 
+
+
+/* Gradient animation Testing */
+
+/* .test {
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animate 10s linear infinite;
+    position: absolute;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 80%;
+    }
+} */
+
+
+/* .test {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+
+} */
+
+/* .test:before {
+    content: '';
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+    left: -20%;
+    top: -20%;
+    animation: spin 2.6s infinite linear;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.test:after {
+    position: absolute;
+    content: 'HELLO';
+    background-color: #000;
+    height: 98%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+} */
+
+/* .test-inside {
+    font-family: 'Courier New', Courier, monospace;
+} */
 
 /* img {
     height: 200px;
@@ -126,7 +204,7 @@ a {
     filter: blur(4px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
+    animation: glowing 30s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 50%;
