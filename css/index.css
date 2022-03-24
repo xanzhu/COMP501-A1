@@ -3,26 +3,37 @@ html {
     background-color: #000;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    margin: 0 2.6em 2.6em 0;
+    /*margin: 0 2.6em 2.6em 0; */
+    scroll-behavior: smooth;
 }
 
 /* Global Rulesets */
+
 ol, ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
 }
 
 /* Main Layout Card */
+
 .main-card {
     display: flex;
     justify-content: space-between;
 } 
 
+
+
+ /* Landing Card */ 
+.a-card {
+    height: 100vh;
+}
+
+
 /* Student Information Card */
+
 .s-card {
     font-weight: 100;
 }
@@ -37,6 +48,11 @@ a {
 
 
 /* Navigation */
+
+.nav-card {
+    padding-right: 30px;
+}
+
 .nav-card li{
     margin: 15px 0px;
 }
@@ -44,13 +60,12 @@ a {
 .nav-card a {
     padding: 8px 16px;
     border-radius: 4px;
+    color: white;
 }
 .nav-card a:hover {
     color: white;
     background-color: #111;
 }
-
-
 
 /* Assignment Title Card */
 
@@ -91,6 +106,62 @@ a {
     padding-top: 20px;
     font-size: 1.2rem;
 }
+
+/* Part one Card */
+.part-1-card {
+    height: 100vh;
+    margin: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 0 0 20px;
+}
+
+.part-1-id {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.part-1-id-red {
+    color: red;
+}
+
+.part-1-img {
+    height: 200px;
+    width: auto;
+}
+
+.part-1-img-b {
+    height: 150px;
+    width: auto;
+}
+
+/* Part two card  */
+/* .part-2-card {
+    height: 100vh;
+    margin: auto;
+    padding: 20px 0 0 20px;
+} */
+
+/* Question one */
+
+.q1-title {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.q1-a, .q1-b {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.q1-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 /* Custom Gradient WIP */
 
@@ -180,7 +251,7 @@ a {
 
 
 /* Play around with this more! */
-/* .glow-on-hover {
+.glow-on-hover {
     width: 350px;
     height: 350px;
     margin: auto;
@@ -238,4 +309,4 @@ a {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-} */
+}
