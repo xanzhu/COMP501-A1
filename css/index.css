@@ -216,6 +216,15 @@ a {
 }
 
 
+.cmd-imgs > img {
+    text-align: center;
+    width: 550px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
 /* Custom Gradient WIP */
 
 /* Gradient animation Testing */
