@@ -1,3 +1,8 @@
+/* * { TO:DO Rework entire css to support this!
+  padding: 0;
+  margin: 0;
+} */
+
 html {
   font-family: sans-serif;
   background-color: #000;
@@ -296,6 +301,35 @@ a {
 .p3-image-item {
   display: block;
   width: 100%;
+}
+
+/* Table */
+.final-table {
+  padding-top: 50px;
+}
+
+.final-table img {
+  margin: 0 auto;
+  width: 550px;
+  height: auto;
+}
+
+
+/* Evaluation */
+
+.final-results {
+  margin: 0 auto;
+  padding: 0 200px 50px 200px;
+  text-align: left;
+}
+
+
+
+/* Footer */
+.footer-card {
+  text-align: center;
+  font-size: 9px;
+  padding-bottom: 10px;
 }
 
 /* Custom Gradient WIP */
