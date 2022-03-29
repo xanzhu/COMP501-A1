@@ -199,6 +199,7 @@ a {
     margin: auto;
     padding: 20px 0 0 20px;
     text-align: center;
+    overflow: visible;
 } 
 
 /* Setup Grid */
@@ -213,6 +214,7 @@ a {
 .setup-img-1 {
     height: 350px;
     width: auto;
+    display: block;
 }
 
 
@@ -223,7 +225,30 @@ a {
     display: block;
     margin: auto;
     padding: 10px;
+    display: block;
 }
+
+
+.part-3-card {
+    height: 100vh;
+}
+
+.p3-grid {
+    margin: 0 auto;
+    padding: 150px;
+}
+
+.p3-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: stretch;
+    justify-items: center;
+    }
+  .p3-grid img {
+    max-width: 100%;
+  }
+
 
 /* Custom Gradient WIP */
 
