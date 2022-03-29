@@ -110,12 +110,13 @@ a {
 
 /* Part one Card */
 .part-1-card {
-  height: 100vh;
+  height: full;
   width: auto;
   background-color: #fff;
   color: #000;
   margin: auto;
   padding: 5px 0 0 20px;
+  overflow: visible;
 }
 
 .part-1-title {
@@ -154,13 +155,16 @@ a {
   text-decoration: underline;
 }
 
+
+/* TO:DO Convert this into one class! */
 .q1-a,
-.q1-b {
+.q1-b, .q2-a, .q2-b {
   font-size: 20px;
   font-weight: 400;
 }
 
-.q1-card {
+/* TO:DO convert into one class!  */
+.q1-card, .q2-card, .q4-card {
   display: flex;
   justify-content: space-around;
 }
@@ -172,19 +176,21 @@ a {
   border-radius: 4px;
 }
 
-/* Question Two */
-.q2-card {
-  overflow: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
 .part-1-img-c {
     height: 200px;
     width: auto;
 }
+
+.part-1-img-d {
+    height: 150px;
+    width: auto;
+}
+
+.part-1-q4 {
+    height: 120px;
+    width: auto;
+}
+
 
 /* Part two card 
 .part-2-card {
