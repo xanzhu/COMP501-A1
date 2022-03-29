@@ -192,13 +192,29 @@ a {
     width: auto;
 }
 
+/* Part Two */
 
-/* Part two card 
 .part-2-card {
     height: 100vh;
     margin: auto;
     padding: 20px 0 0 20px;
-}  */
+    text-align: center;
+} 
+
+/* Setup Grid */
+.setup-grid {
+    display: flex;
+    grid-template-columns: 14px 14px 14px;
+    grid-gap: 1px 14px;
+    justify-content: space-around;
+}
+
+
+.setup-img-1 {
+    height: 350px;
+    width: auto;
+}
+
 
 /* Custom Gradient WIP */
 
