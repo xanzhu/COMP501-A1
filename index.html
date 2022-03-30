@@ -18,7 +18,6 @@
       <li>nwf5012@autuni.ac.nz</li>
     </ul>
    </div>
-
    <!-- Navigation Card -->
    <div class="nav-card">
     <ol>
@@ -28,7 +27,6 @@
     </ol>
    </div>
   </div>
-
     <!-- Assignment Card  --> 
    <div class="a-card">
      <div class="shape glow-on-hover">
@@ -39,7 +37,6 @@
       </div>
      </div>
     </div>
-
     <!-- Part one -->
    <div class="part-1-card">
     <h2 class="part-1-title">
@@ -51,8 +48,8 @@
       <span>A<sub>10</sub> = 38</span>
     </div>
       <div class="part-1">
-        <p class="q1-title">Question 1: Converting Between Number Bases </p>
-        <div class="q1-card">
+        <p class="question-title">Question 1: Converting Between Number Bases </p>
+        <div class="question-card">
           <div class="q1-a-card">
             <div class="q1-a-info">
               <p>1. A<sub>10</sub> (Decimal) to Binary</p>
@@ -63,14 +60,15 @@
           <div class="q1-b-card">
           <div class="q1-b-info">
             <p>2. A<sub>10</sub> (Decimal) to Hexadecimal</p>
+            <p><i>Remainder: (2.375*16)(0.125*16)</i></p>
           </div>
           <img class="part-1-img-b" src="/images/q1-b.jpg"/>
           <p class="q1-result">26<sub>16</sub> becomes N<sub>16</sub></p>
         </div>
       </div>
       </div>
-      <p class="q2-title">Question 2: Unsigned Arithmetic Operations</p>
-      <div class="q2-card">
+      <p class="question-title">Question 2: Unsigned Arithmetic Operations</p>
+      <div class="question-card">
         <div class="q2-a-card">
           <div class="q2-a-info">
             <p class="q2-a-title">a) M<sub>2</sub> + 11001101<sub>2</sub></p>
@@ -81,49 +79,54 @@
         <div class="q2-a-card">
           <div class="q2-a-info">
             <p class="q2-a-title">b) N<sub>16</sub> + 99<sub>16</sub></p>
+            <p><i>Adding values together where above 9 is converted into letters</i></p>
           </div>
           <img class="part-1-img-c" src="/images/q2-a.png"/>
           <p class="q1-result">Result:   BF<sub>16</sub></p>
         </div>
       </div>
       
-      <p class="q2-title">Question 3: 2's Complement Conversion</p>
-      <div class="q2-card">
-        <p class="q3-info-p">B<sub>10</sub> = -38 <br>Convert B<sub>10</sub> to 8bit 2's Binary</p>
+      <p class="question-title">Question 3: 2's Complement Conversion</p>
+      <div class="question-card">
+        <div class="q3-info">
+          <p class="q3-info-p">Convert B<sub>10</sub> to 8bit 2's Binary (B<sub>10</sub> = -38)</p>
+          <p>Since we already have the postive value of 38 we can flip the bits to get the negative value</p>
+          <p>This converted into the 1s complement in order (-37) to convert this into 2s complement we need to add + 1 (-38)</p>
+        </div>
         <div>
           <img class="part-1-img-d" src="/images/q3.png" />
           <p class="q1-result">Result: 11011010<sub>2</sub></p>
         </div>
       </div>
      
-      <p class="q2-title">Question 4: Bitwise Logical Operations</p>
+      <p class="question-title">Question 4: Bitwise Logical Operations</p>
       <p class="q4-info">C<sub>2</sub> refers to the number found in Question 3 which was 11011010<sub>2</sub></p>
-      <div class="q4-card">
+      <div class="question-card">
         <div class="q4-a-card">
-          <p class="q4-title">a) C<sub>2</sub> | 0111 0001 (OR)</p>
+          <p>a) C<sub>2</sub> | 0111 0001 (<b>OR</b>)</p>
           <img class="part-1-q4" src="/images/q4-a.jpg"/>
           <p class="q1-result">Result: 11111011 <sub>2</sub></p>
         </div>
         <div class="q4-b-card">
-          <p class="q4-title">b) C<sub>2</sub> & 0100 1101 (AND)</p>
+          <p>b) C<sub>2</sub> & 0100 1101 (<b>AND</b>)</p>
           <img class="part-1-q4" src="/images/q4-b.jpg"/>
           <p class="q1-result">Result: 01001000<sub>2</sub></p>
         </div>
         <div class="q4-c-card">
-          <p class="q4-title">c) C<sub>2</sub> ^ 1101 1100 (Exclusive OR)</p>
+          <p>c) C<sub>2</sub> ^ 1101 1100 (<b>Exclusive OR</b>)</p>
           <img class="part-1-q4" src="/images/q4-c.jpg"/>
           <p class="q1-result">Result: 00000110<sub>2</sub></p>
         </div>
         <div class="q4-d-card">
-          <p class="q4-title">d) C<sub>2</sub>  &lt;&lt; 4 (Left Arithmetic shift)</p>
+          <p>d) C<sub>2</sub>  &lt;&lt; 4 (<b>Left Arithmetic shift</b>)</p>
           <img class="part-1-q4" src="/images/q4-d.png"/>
           <p class="q1-result">Result: 10100000<sub>2</sub></p>
         </div>
       </div>
 
-      <p class="q2-title">Question 5: ASCII Characters</p>
+      <p class="question-title">Question 5: ASCII Characters</p>
       <p class="q4-info">Convert your full name into Hexadecimal using ASCII Table</p>
-      <div class="q4-card">
+      <div class="question-card">
         <div class="q5-a-card">
           <p class="q4-title">a) Your full name in Hexadecimal (lowercase)</p></p>
           <img class="part-1-q4" src="/images/q5-a.jpg"/>
@@ -138,68 +141,80 @@
       </div>
    </div>
     <!-- Part Two -->
-    <div class="part-2-card">
-      <h2><a id="part_2">Part Two</h2>
-        <p>Installing Linux based operating systems</p>
-        <p>Device: Macbook air M1, Software: UTM</p>
-        <div class="setup-grid">
-          <div class="grid-ubuntu">
+    <div class="part-two-card">
+      <div class="part-two-header" id="part_2">
+        <h2>Part Two: Linux</h2>
+          <div class="sub-heading">
+            <p>Installing Linux based operating systems</p>
+            <p><b>Device</b>: Macbook air M1 - Software: UTM</p>
+          </div>
+      </div>
+        <div class="grid-setup">
+          <div class="grid-info">
             <h3 class="s-u">Ubuntu</h3>
-            <p>Installed Server Version</p>
-            <img class="setup-img-1" src="/images/Ubuntu/u-s1.png">
+            <p>ARM64 20.04.4 Server version</p>
+            <img src="/images/Ubuntu/u-s1.png">
           </div>
-          <div class="grid-fedora">
+          <div class="grid-info">
             <h3 class="s-f">Fedora</h3>
-            <p>Installed X version</p>
-            <img class="setup-img-1" src="/images/Fedora/f-s1.png">
+            <p>Workstation 35 AARCH64</p>
+            <img src="/images/Fedora/f-s1.png">
           </div>
-          <div class="grid-kali">
+          <div class="grid-info">
             <h3 class="s-k">Kali Linux</h3>
-            <p>Installed x version</p>
-            <img class="setup-img-1" src="/images/Kali_Linux/k-s1.png">
+            <p>ARM64 2022.1</p>
+            <img src="/images/Kali_Linux/k-s1.png">
           </div>
         </div>
-        <p>Next step allocating storage / memory</p>
-        <p>This process automatically adjusted the storage</p>
-        <div class="setup-grid">
-          <div class="grid-ubuntu">
-            <img class="setup-img-1" src="/images/Ubuntu/u-s3.png">
+        <div class="part-two-section">
+          <p>Next step allocating storage / memory</p>
+          <p>This process automatically adjusted the storage</p>
+        </div>
+        <div class="grid-setup">
+          <div class="grid-info">
+            <img src="/images/Ubuntu/u-s3.png">
           </div>
-          <div class="grid-fedora">
-            <img class="setup-img-1" src="/images/Fedora/f-s2.png">
+          <div class="grid-info">
+            <img src="/images/Fedora/f-s2.png">
           </div>
-          <div class="grid-kali">
-            <img class="setup-img-1" src="/images/Kali_Linux/k-s20.png">
+          <div class="grid-info">
+            <img src="/images/Kali_Linux/k-s20.png">
           </div>
         </div>
-        <p>Final configuration Summary</p>
-        <p>This includes all settings for the virtual machine.</p>
-        <div class="setup-grid">
-          <div class="grid-ubuntu">
-            <img class="setup-img-1" src="/images/Ubuntu/u-sum.png">
+        <div class="part-two-section">
+          <p>Final configuration Summary</p>
+          <p>This includes all settings for the virtual machine.</p>
+        </div>
+        <div class="grid-setup">
+          <div class="grid-info">
+            <img src="/images/Ubuntu/u-sum.png">
           </div>
-          <div class="grid-fedora">
-            <img class="setup-img-1" src="/images/Fedora/f-sum.png">
+          <div class="grid-info">
+            <img src="/images/Fedora/f-sum.png">
           </div>
-          <div class="grid-kali">
-            <img class="setup-img-1" src="/images/Kali_Linux/k-sum.png">
+          <div class="grid-info">
+            <img src="/images/Kali_Linux/k-sum.png">
           </div>
         </div>
-        <p>Booting into devices</p>
-        <p>All very smooth process apart from Ubuntu</p>
-        <div class="setup-grid">
-          <div class="grid-ubuntu">
-            <img class="setup-img-1" src="/images/Ubuntu/Ubuntu.png">
+        <div class="part-two-section">
+          <p>Booting into devices</p>
+          <p>All very smooth process apart from Ubuntu</p>
+        </div>
+        <div class="grid-setup">
+          <div class="grid-info">
+            <img class="screen-display" src="/images/Ubuntu/Ubuntu.png">
           </div>
-          <div class="grid-fedora">
-            <img class="setup-img-1" src="/images/Fedora/Fedora.png">
+          <div class="grid-info">
+            <img class="screen-display" src="/images/Fedora/Fedora.png">
           </div>
-          <div class="grid-kali">
-            <img class="setup-img-1" src="/images/Kali_Linux/Kali.png">
+          <div class="grid-info">
+            <img class="screen-display" src="/images/Kali_Linux/Kali.png">
           </div>
         </div>
-        <p>Ubuntu was a process to setup as my mac only supports the Server version it did not come with a desktop only the terminal</p>
-        <p>I further installed the desktop by running a range of commands and tools!</p>
+        <div class="part-two-footer">
+          <p>Ubuntu was a process to setup as my mac only supports the Server version it did not come with a desktop only the terminal</p>
+          <p>I further installed the desktop by running a range of commands and tools!</p>
+        </div>
         <div class="linux-cmd-card">
           <h3>Working with the terminal!</h3>
           <!-- Add fun animation for this part -->
@@ -316,7 +331,7 @@
           <img src="/images/Input/P10.jpg" loading="lazy">
         </div>
       </div>
-      <!-- Grid of images TO:DO calculations on hover -->
+      <!-- Grid of processed images -->
       <p>Processing images using You only look once Object Dection</p>
 
       <div class="p3-grid">
