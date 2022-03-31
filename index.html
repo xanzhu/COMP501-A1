@@ -8,24 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--Main Layout Card -->
-    <div class="main-card">
-    <!-- Student Information Card -->
     <div class="s-card"> 
       <ul class="s-ul">
       <li class="s-name">Bobby Jenkins </li>
       <li class="s-id">21138308</li>
-      <li>nwf5012@autuni.ac.nz</li>
-    </ul>
-   </div>
-   <!-- Navigation Card -->
-   <div class="nav-card">
-    <ol>
-      <li><a href="#part_1">Part One</a></li>
-      <li><a href="#part_2">Part Two</a></li>
-      <li><a href="#part_3">Part Three</a></li>
-    </ol>
-   </div>
+      <li class="s-email">nwf5012@autuni.ac.nz</li>
+      </ul>
+    <div class="header-test">
+      <!-- Blank Element -->
+        <a class="id"></a> 
+        <a class="id-c" href="#">21138308</a>
+      <ul>
+        <li><a href="#part_1">Part One</a></li>
+        <li><a href="#part_2">Part Two</a></li>
+        <li><a href="#part_3">Part Three</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector(".header-test");
+        header.classList.toggle("sticky", window.scrollY > 0.5);
+      })
+    </script>
   </div>
     <!-- Assignment Card  --> 
    <div class="a-card">

@@ -8,8 +8,8 @@ html {
   background-color: #000;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  /*margin: 0 2.6em 2.6em 0; */
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
 
 /* Global Rulesets */
 
-ol,
 ul {
   list-style: none;
 }
@@ -46,6 +45,11 @@ a {
   font-weight: 100;
 }
 
+.s-ul {
+  padding-left: 20px;
+  width: 50%;
+}
+
 .s-name {
   font-weight: 700;
 }
@@ -58,6 +62,7 @@ a {
 
 .nav-card {
   padding-right: 30px;
+  position: sticky;
 }
 
 .nav-card li {
@@ -354,13 +359,77 @@ a {
   text-align: left;
 }
 
-
-
 /* Footer */
 .footer-card {
   text-align: center;
   font-size: 9px;
   padding-bottom: 10px;
+}
+
+/* Header Testing */
+.header-test {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: 0.6s;
+}
+
+.header-test.sticky {
+  background-color: #fff;
+  z-index: 100;
+  width: 100%
+}
+.header-test.sticky .id,
+.header-test.sticky ul li a {
+  color: #000;
+}
+
+.header-test .id-c {
+  position: relative;
+  font-weight: 700;
+  color: transparent;
+  text-decoration: none;
+  transform: 0.6s;
+  padding-left: 20px;
+}
+
+/* Blank Element */
+.header-test.sticky .id-c {
+  color: #000;
+  display: flex;
+}
+
+.header-test.sticky .id {
+  display: none;
+}
+
+.header-test .id-c {
+  display: none;
+}
+
+.header-test ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-test ul li {
+  position: relative;
+  list-style: none;
+}
+
+.header-test ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.6s;
 }
 
 /* Custom Gradient WIP */
