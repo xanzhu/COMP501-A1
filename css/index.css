@@ -98,12 +98,13 @@ a {
   margin-top: 6em;
   text-align: center;
   white-space: nowrap;
-  /* padding-top: 6em; */
+  padding-top: 7em;
+  margin: 0 auto;
 }
 
 .a-title {
   text-align: center;
-  margin-left: -60px;
+  margin-left: -3em;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -349,7 +350,8 @@ a {
   margin: 0 auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
 }
@@ -367,7 +369,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: rgba(0, 0, 0, 0.422);
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
@@ -391,14 +393,13 @@ a {
   width: 100%;
 }
 
-/* Dealing with 2 orphan items */
-.p3-grid-image:last-child:nth-child(3n - 1) {
-  grid-column-end: -2;
+.p3-section {
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px 0 20px 0;
 }
 
-.p3-grid-image:nth-last-child(2):nth-child(3n + 1) {
-  grid-column-end: 4;
-}
 
 /* TO:DO Refine Table / Summary */
 /* Table */
@@ -429,7 +430,7 @@ a {
 }
 
 /* Header Testing */
-.header-test {
+.global-header {
   top: 0;
   left: 0;
   position: fixed;
@@ -441,16 +442,17 @@ a {
   z-index: 10;
 }
 
-.header-test.sticky {
-  background-color: #fff;
+.global-header.sticky {
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #000;
   width: 100%;
 }
-.header-test.sticky .id,
-.header-test.sticky ul li a {
+.global-header.sticky .id,
+.global-header.sticky ul li a {
   color: #000;
 }
 
-.header-test .id-c {
+.global-header .id-c {
   position: relative;
   font-weight: 700;
   color: transparent;
@@ -460,32 +462,32 @@ a {
 }
 
 /* Blank Element */
-.header-test.sticky .id-c {
+.global-header.sticky .id-c {
   color: #000;
   display: flex;
 }
 
-.header-test.sticky .id {
+.global-header.sticky .id {
   display: none;
 }
 
-.header-test .id-c {
+.global-header .id-c {
   display: none;
 }
 
-.header-test ul {
+.global-header ul {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-test ul li {
+.global-header ul li {
   position: relative;
   list-style: none;
 }
 
-.header-test ul li a {
+.global-header ul li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -494,103 +496,15 @@ a {
   transition: 0.6s;
 }
 
-/* Custom Gradient WIP */
-
-/* Gradient animation Testing */
-
-/* .test {
-    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: animate 10s linear infinite;
-    position: absolute;
-}
-@keyframes animate {
-    0%{
-        background-position: 0%;
-    }
-    50%{
-        background-position: 80%;
-    }
-} */
-
-/* .test {
-    height: 350px;
-    width: 350px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-
-} */
-
-/* .test:before {
-    content: '';
-    height: 150%;
-    width: 150%;
-    position: absolute;
-    background: conic-gradient(
-        #fd004c,
-        #fe9000,
-        #fff020,
-        #3edf4b,
-        #3363ff,
-        #b102b7,
-        #fd004c
-    );
-    left: -20%;
-    top: -20%;
-    animation: spin 2.6s infinite linear;
-}
-@keyframes spin {
-    100%{
-        transform: rotate(-360deg);
-    }
-}
-
-.test:after {
-    position: absolute;
-    content: 'HELLO';
-    background-color: #000;
-    height: 98%;
-    width: 98%;
-    top: 1%;
-    left: 1%;
-    letter-spacing: 6px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    font-size: 20px;
-} */
-
-/* .test-inside {
-    font-family: 'Courier New', Courier, monospace;
-} */
-
-/* img {
-    height: 200px;
-    width: 200px;
-} */
-
-/* Play around with this more! */
-.glow-on-hover {
+/* Custom Gradient Animation */
+.landing-animation {
   width: 350px;
   height: 350px;
-  margin: auto;
-  border: none;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
+  margin: 0 auto;
   position: relative;
-  z-index: 0;
-  border-radius: 50%;
 }
 
-.glow-on-hover:before {
+.landing-animation:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -609,34 +523,19 @@ a {
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(4px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing 30s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
   border-radius: 50%;
 }
 
-.glow-on-hover:active {
-  color: transparent;
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
+.landing-animation:after {
   z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.836);
+  background: rgba(0, 0, 0, 0.871);
   left: 0;
   top: 0;
   border-radius: 50%;
