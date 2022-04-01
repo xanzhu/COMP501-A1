@@ -27,13 +27,6 @@ a {
   text-decoration: none;
 }
 
-/* Main Layout Card */
-
-.main-card {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* Landing Card */
 .a-card {
   height: 100vh;
@@ -58,26 +51,6 @@ a {
   font-weight: 400;
 }
 
-/* Navigation */
-
-.nav-card {
-  padding-right: 30px;
-  position: sticky;
-}
-
-.nav-card li {
-  margin: 15px 0px;
-}
-
-.nav-card a {
-  padding: 8px 16px;
-  border-radius: 4px;
-  color: white;
-}
-.nav-card a:hover {
-  color: white;
-  background-color: #111;
-}
 
 /* Assignment Title Card */
 
@@ -190,20 +163,6 @@ a {
 .part-1-q4 {
     height: 120px;
     width: auto;
-}
-
-/* Setup Grid */
-.setup-grid {
-    display: flex;
-    grid-template-columns: 14px 14px 14px;
-    grid-gap: 1px 14px;
-    justify-content: space-around;
-}
-
-.setup-img-1 {
-    height: 350px;
-    width: auto;
-    display: block;
 }
 
 .cmd-imgs {
