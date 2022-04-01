@@ -233,7 +233,7 @@ a {
 
 .grid-info > img {
   height: 350px;
-  width: auto;
+  width: 310px;
 }
 
 .grid-info > h3, p {
@@ -246,7 +246,7 @@ a {
 
 .grid-info > .screen-display {
   height: 250px;
-  width: auto;
+  width: 340px;
   padding: 10px;
 }
 
@@ -315,8 +315,8 @@ a {
 }
 
 .p3-grid div img {
-  width: 100%;
-  height: 100%;
+  width: 264px;
+  height: 250px;
   object-fit: fill;
 }
 
@@ -325,8 +325,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 250px;
+  width: 264px;
   background-color: rgba(0, 0, 0, 0.422);
   backdrop-filter: blur(5px);
   display: flex;
