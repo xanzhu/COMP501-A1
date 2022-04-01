@@ -205,6 +205,10 @@ a {
     display: block;
 }
 
+.cmd-imgs {
+  margin-bottom: 50px;
+}
+
 .cmd-imgs > img {
     text-align: center;
     width: 550px;
@@ -287,7 +291,56 @@ a {
   padding: 10px;
 }
 
+.linux-cmd-info {
+  margin: 15px 0 15px 0;
+}
+
+.linux-cmd-info p {
+  font-size: 14px;
+}
+
+.linux-cmd-info > h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.linux-cmd-info h3 {
+  color: red;
+}
+
+.linux-cmd-info p:last-child {
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
 /* Part 3  Refined */
+
+.part-3-card {
+  background-color: #fff;
+}
+
+.part-3-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #222;
+  text-align: left;
+}
+
+.p3-content {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.part-3-info > img {
+  object-fit: cover;
+  object-position: center;
+  height: 150px;
+  width: 50%;
+  color: red;
+}
 
 /* Image Grid */
 .p3-grid {
@@ -338,6 +391,15 @@ a {
   width: 100%;
 }
 
+/* Dealing with 2 orphan items */
+.p3-grid-image:last-child:nth-child(3n - 1) {
+  grid-column-end: -2;
+}
+
+.p3-grid-image:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+
 /* TO:DO Refine Table / Summary */
 /* Table */
 .final-table {
@@ -376,12 +438,12 @@ a {
   align-items: center;
   width: 100%;
   transition: 0.6s;
+  z-index: 10;
 }
 
 .header-test.sticky {
   background-color: #fff;
-  z-index: 100;
-  width: 100%
+  width: 100%;
 }
 .header-test.sticky .id,
 .header-test.sticky ul li a {
