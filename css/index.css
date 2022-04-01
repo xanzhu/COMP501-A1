@@ -95,13 +95,29 @@ a {
 
 /* Part one Card */
 .part-1-card {
-  /* height: 100vh; */
   width: auto;
   background-color: #fff;
   color: #000;
   margin: auto;
   padding: 5px 0 0 20px;
   overflow: visible;
+}
+
+.explain {
+  font-style: italic;
+  padding: 4px 0 4px 0;
+}
+
+.q4-info {
+  padding: 0 0 20px 20px;
+}
+
+.question-sub {
+  font-weight: 600;
+}
+
+.part-1-section {
+  padding: 10px;
 }
 
 .part-1-title {
@@ -134,8 +150,17 @@ a {
 
 /* Questions */
 .question-title {
-  font-weight: 400;
+  font-weight: 800;
   text-decoration: underline;
+  padding: 34px;
+}
+
+.q2-a-card {
+  margin: 40px;
+}
+
+.part-1-end {
+  padding-bottom: 25px;
 }
 
 .question-card {
@@ -381,6 +406,10 @@ a {
   text-align: left;
 }
 
+.final-p {
+  padding: 5px;
+}
+
 /* Footer */
 .footer-card {
   text-align: center;
@@ -409,6 +438,21 @@ a {
 .global-header.sticky .id,
 .global-header.sticky ul li a {
   color: #000;
+}
+
+.nav-style li a {
+  padding: 4px 8px;
+  border: 1px solid transparent;
+}
+
+.nav-style li a:hover {
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.global-header.sticky .nav-style li a:hover {
+  border: 1px solid #000;
 }
 
 .global-header .id-c {

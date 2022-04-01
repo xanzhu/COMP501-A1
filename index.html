@@ -19,7 +19,7 @@
       <!-- Blank Element -->
         <a class="id"></a> 
         <a class="id-c" href="#">21138308</a>
-      <ul>
+      <ul class="nav-style">
         <li><a href="#part_1">Part One</a></li>
         <li><a href="#part_2">Part Two</a></li>
         <li><a href="#part_3">Part Three</a></li>
@@ -44,28 +44,37 @@
     </div>
     <!-- Part one -->
    <div class="part-1-card">
-    <h2 class="part-1-title">
-      <a id="part_1">Part One</a>
-    </h2>
-    <div class="part-1-id">
-      <p class="p1-id-p">A<sub>10</sub> referring to the last 2 digits on your student ID. In my case this was 08, I made the switch to using 38 as 08 would make this assignment too easy.</p>
-      <span>Student ID: 21138</span><span class="part-1-id-red">3</span><span>0</span><span class="part-1-id-red">8</span>
-      <span>A<sub>10</sub> = 38</span>
-    </div>
+     <div class="part-1-section" id="part_1">
+      <h2 class="part-1-title">Part One</h2>
+      <p>A<sub>10</sub> Referring to the last 2 digits on your student ID.</p>
+      <p>In my case this was 08, I made the switch to using 38 as it would make this assignment too easy.</p>
+      <br>
+      <span>Student ID: 21138</span><span class="part-1-id-red">3</span><span>0</span><span class="part-1-id-red">8</span> or A<sub>10</sub> = 38
+      
+     </div>
       <div class="part-1">
         <p class="question-title">Question 1: Converting Between Number Bases </p>
         <div class="question-card">
-          <div class="q1-a-card">
-            <div class="q1-a-info">
-              <p>1. A<sub>10</sub> (Decimal) to Binary</p>
+          <div>
+            <div>
+              <p class="question-sub">1. A<sub>10</sub> (Decimal) to Binary</p>
+              <div class="explain">
+                <p>Converting to base2 we divide by 2 until we reach 0.</p>
+                <p>The remainder will be either 1 or 0 forming the binary value.</p>
+                <p>Which is read from bottom (MSB) to top (LSB)</p>
+              </div>
             </div>
           <img class="part-1-img" src="/images/p1/q1-a.png">
           <p class="q1-result">00100110<sub>2</sub> becomes M<sub>2</sub></p>
           </div>
           <div class="q1-b-card">
           <div class="q1-b-info">
-            <p>2. A<sub>10</sub> (Decimal) to Hexadecimal</p>
-            <p><i>Remainder: (2.375*16)(0.125*16)</i></p>
+            <p class="question-sub">2. A<sub>10</sub> (Decimal) to Hexadecimal</p>
+            <div class="explain">
+              <p>Converting to base16 we devide by 16 until we reach 0</p>
+              <p>The remainder is then times by 16 giving us the values</p>
+              <p>This is read from bottom to top.</p>
+            </div>
           </div>
           <img class="part-1-img-b" src="/images/p1/q1-b.jpg"/>
           <p class="q1-result">26<sub>16</sub> becomes N<sub>16</sub></p>
@@ -76,15 +85,21 @@
       <div class="question-card">
         <div class="q2-a-card">
           <div class="q2-a-info">
-            <p class="q2-a-title">a) M<sub>2</sub> + 11001101<sub>2</sub></p>
+            <p class="question-sub">a) M<sub>2</sub> + 11001101<sub>2</sub></p>
+            <div class="explain">
+              <p>Adding together bits (0 or 1), having two 1's gives us 0 and 1 is carried</p>
+            </div>
           </div>
           <img class="part-1-img-c" src="/images/p1/q2-b.png"/>
           <p class="q1-result">Result:  11110011<sub>2</sub></p>
         </div>
-        <div class="q2-a-card">
-          <div class="q2-a-info">
-            <p class="q2-a-title">b) N<sub>16</sub> + 99<sub>16</sub></p>
-            <p><i>Adding values together where above 9 is converted into letters</i></p>
+        <div class="q2-b-card">
+          <div class="q2-b-info">
+            <p class="question-sub">b) N<sub>16</sub> + 99<sub>16</sub></p>
+            <div class="explain">
+              <p>Adding together the values note that a value above 9 will be converted into a letter</p>
+              <p>Since we are not carrying we can work this out easily.</p>
+            </div>
           </div>
           <img class="part-1-img-c" src="/images/p1/q2-a.png"/>
           <p class="q1-result">Result:   BF<sub>16</sub></p>
@@ -93,9 +108,12 @@
       <p class="question-title">Question 3: 2's Complement Conversion</p>
       <div class="question-card">
         <div class="q3-info">
-          <p class="q3-info-p">Convert B<sub>10</sub> to 8bit 2's Binary (B<sub>10</sub> = -38)</p>
-          <p>Since we already have the postive value of 38 we can flip the bits to get the negative value</p>
-          <p>This converted into the 1s complement in order (-37) to convert this into 2s complement we need to add + 1 (-38)</p>
+          <p class="question-sub">Convert B<sub>10</sub> to 8bit 2's Binary (B<sub>10</sub> = -38)</p>
+          <div class="explain">
+            <p>Since we already have the postive value of 38 we can flip the bits to get the negative value</p>
+            <p>This converted into the 1s complement which is -37</p>
+            <p>To convert this into 2s complement we need to add + 1 (-38)</p>
+          </div>
         </div>
         <div>
           <img class="part-1-img-d" src="/images/p1/q3.png" />
@@ -103,40 +121,66 @@
         </div>
       </div>
       <p class="question-title">Question 4: Bitwise Logical Operations</p>
-      <p class="q4-info">C<sub>2</sub> refers to the number found in Question 3 which was 11011010<sub>2</sub></p>
+      <div class="q4-info">
+        <p>C<sub>2</sub> refers to the number found in Question 3 which was 11011010<sub>2</sub></p>
+        <p>Each logical operator has their own rules when adding these bits together.</p>
+      </div>
       <div class="question-card">
         <div class="q4-a-card">
-          <p>a) C<sub>2</sub> | 0111 0001 (<b>OR</b>)</p>
+          <p class="question-sub">a) C<sub>2</sub> | 0111 0001 (<b>OR</b>)</p>
+          <div class="explain">
+            <p>Useful for setting bits</p>
+            <p>If 0 is present no change</p>
+            <p>1 is present = 1</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q4-a.jpg"/>
           <p class="q1-result">Result: 11111011 <sub>2</sub></p>
         </div>
         <div class="q4-b-card">
-          <p>b) C<sub>2</sub> & 0100 1101 (<b>AND</b>)</p>
+          <p class="question-sub">b) C<sub>2</sub> & 0100 1101 (<b>AND</b>)</p>
+          <div class="explain">
+            <p>Useful for clearing bits</p>
+            <p>If 1 is present no change</p>
+            <p>0 is present = 0</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q4-b.jpg"/>
           <p class="q1-result">Result: 01001000<sub>2</sub></p>
         </div>
         <div class="q4-c-card">
-          <p>c) C<sub>2</sub> ^ 1101 1100 (<b>Exclusive OR</b>)</p>
+          <p class="question-sub">c) C<sub>2</sub> ^ 1101 1100 (<b>Exclusive OR</b>)</p>
+          <div class="explain">
+            <p>Useful for encryption</p>
+            <p>If both 0 then 0</p>
+            <p>If 1 then 0</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q4-c.jpg"/>
           <p class="q1-result">Result: 00000110<sub>2</sub></p>
         </div>
         <div class="q4-d-card">
-          <p>d) C<sub>2</sub>  &lt;&lt; 4 (<b>Left Arithmetic shift</b>)</p>
+          <p class="question-sub">d) C<sub>2</sub>  &lt;&lt; 4 (<b>Left Arithmetic shift</b>)</p>
+          <div class="explain">
+            <p>Shifting the bits left</p>
+            <p>Where the most significate bit is lost.</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q4-d.png"/>
           <p class="q1-result">Result: 10100000<sub>2</sub></p>
         </div>
       </div>
       <p class="question-title">Question 5: ASCII Characters</p>
-      <p class="q4-info">Convert your full name into Hexadecimal using ASCII Table</p>
-      <div class="question-card">
+      <div class="question-card part-1-end">
         <div class="q5-a-card">
-          <p class="q4-title">a) Your full name in Hexadecimal (lowercase)</p>
+          <p class="question-sub">a) Your full name in Hexadecimal (lowercase)</p>
+          <div class="explain">
+            <p>Convert your full name into Hexadecimal using ASCII Table</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q5-a.jpg"/>
           <p class="q1-result">626F626279206A656E6B696E7300<sub>16</sub></p>
         </div>
         <div class="q5-b-card">
-          <p class="q4-title">b) How many bits are used?</p>
-          <p>I calculated this by converting into binary (26 * 4 Bits)</p>
+          <p class="question-sub">b) How many bits are used?</p>
+          <div class="explain">
+            <p>I calculated this by converting into binary <br>then counting the bits (26 * 4 Bits)</p>
+          </div>
           <img class="part-1-q4" src="/images/p1/q5-b.jpg">
           <p class="q1-result">104 Bits</p>
         </div>
@@ -716,10 +760,10 @@
     </div>
       <div class="final-results">
       <h2>Evaluation</h2>
-      <p>YOLO or known as You Only Look Once is an algorithm made to detect patterns using computer vision. This software has been in ongoing development since 2015. Making this software relatively new. Comparing to other Real-time detection models YOLO uses a different method of detection by calculating the object class and bounding boxes all at once. Whereas other models will follow the usage of Identifying the objects then applying bounding boxes based on the overall probability. Making YOLO capable of operating much faster in Realtime environments with great accuracy. </p>
-      <p>While experimenting with YOLO I found that while the software functions as expected there is a lot of limitations. YOLO can accurately detect objects in its field of view but suffers recognising objects obfuscated by shadows or at great distances. There also was the issue where detections were made on advertisements or reflections the program struggled with distinction in these situations.</p>
-      <p>I would recommend this software to AT Transport as its able to recognise objects at a reasonable field of view. This would be helpful in identifying in locations such as intersections but may struggle with object detection at great distances.</p>
-      <p>As this tool is still being developed it would be recommended to AT to further research and expand the data set to rule out possible outliers which will arise from unknown transportation types such as electric scooters which are not currently detected by this software.</p>
+      <p class="final-p">YOLO or known as You Only Look Once is an algorithm made to detect patterns using computer vision. This software has been in ongoing development since 2015. Making this software relatively new. Comparing to other Real-time detection models YOLO uses a different method of detection by calculating the object class and bounding boxes all at once. Whereas other models will follow the usage of Identifying the objects then applying bounding boxes based on the overall probability. Making YOLO capable of operating much faster in Realtime environments with great accuracy. </p>
+      <p class="final-p">While experimenting with YOLO I found that while the software functions as expected. Quite a few limitations as well. YOLO can accurately detect objects (Average of 81.9%) in its field of view but suffers recognising objects obfuscated by shadows or at great distances. Outliers noticed were detections made on advertisements or reflections the program struggled with distinction in these situations.</p>
+      <p class="final-p">I would recommend this software to AT Transport as its able to recognise objects at a reasonable field of view and accuracy. This would work well in short distance based locations such as intersections and general traffic light stops.</p>
+      <p class="final-p">As this tool is still being developed it would be recommended to AT Transport to further research and expand the data set to rule out possible outliers which will arise. Example Unknown transportation types such as electric scooters which are not currently detected by this software.</p>
     </div> 
     <div class="footer-card">
       <p>© Bobby Jenkins 2022</p>
