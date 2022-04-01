@@ -1,5 +1,4 @@
 html {
-  font-family: sans-serif;
   background-color: #000;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -46,21 +45,11 @@ a {
   font-weight: 400;
 }
 
-
 /* Assignment Title Card */
 
 .a-card {
   margin-top: 60px;
 }
-
-/* .shape {
-  width: 350px;
-  height: 350px;
-  margin: auto;
-  border-radius: 50%;
-  border: 1px solid red;
-  position: inherit;
-} */
 
 .a-content {
   margin-top: 6em;
@@ -117,16 +106,6 @@ a {
 
 .part-1-title {
   margin: 0;
-}
-
-.part-1-id {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.p1-id-p {
-  font-size: 12px;
-  font-weight: 400;
 }
 
 .part-1-id-red {
@@ -367,11 +346,6 @@ a {
   position: relative;
 } 
 
-.p3-image-item {
-  display: block;
-  width: 100%;
-}
-
 .p3-section {
   color: #000;
   text-align: center;
@@ -379,8 +353,6 @@ a {
   padding: 20px 0 20px 0;
 }
 
-
-/* TO:DO Refine Table / Summary */
 /* Table */
 .final-table {
   padding-top: 50px;
